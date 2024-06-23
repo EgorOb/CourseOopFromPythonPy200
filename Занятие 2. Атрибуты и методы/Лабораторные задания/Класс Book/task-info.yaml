@@ -1,0 +1,12 @@
+type: output
+files:
+- name: __init__.py
+  visible: false
+- name: tests/output.txt
+  visible: false
+- name: main.py
+  visible: true
+  placeholders:
+  - offset: 188
+    length: 19
+    placeholder_text: '# TODO написать класс Book'

@@ -1,0 +1,7 @@
+content:
+  - task2_4_LinkedList__eq__
+  - task2_5_LinkedList__lt__
+  - task1_all_attr_all_method
+  - task2_1_LinkedList__mul__
+  - task2_2_LinkedList__imul__
+  - task2_3_LinkedList__rmul__
