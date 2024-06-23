@@ -26,19 +26,14 @@ class Glass:
 
 
 if __name__ == "__main__":
-    glass1 = Glass(200, 100)  # экземпляр класса
-    print(glass1.capacity_volume, glass1.occupied_volume)
-
+    glass1 = Glass(200, 100)
     glass2 = Glass(200, 150)
-    print(glass2.capacity_volume, glass2.occupied_volume)
 
-    print("Доливаем воды в первый стакан...")
-    glass1.occupied_volume += 50
+    try:
+        Glass(-200, 100)
+    except Exception as err:
+        print(f"Была вызвана ошибка {err!r}")
+    else:
+        print("Данный код без ошибок")
 
-    print(glass1.capacity_volume, glass1.occupied_volume)
-    print(glass2.capacity_volume, glass2.occupied_volume)
 
-    assert glass1.capacity_volume == glass2.capacity_volume  # Проверяем, что объемы стаканов одинаковые (иначе будет ошибка)
-    assert glass1.occupied_volume == glass2.occupied_volume  # Проверяем, что стаканы заполнены одинаково (иначе будет ошибка)
-
-    print(id(glass1) == id(glass2))  # TODO сравнить id объектов (должно вернуть True или False)
