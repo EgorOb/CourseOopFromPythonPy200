@@ -1,8 +1,5 @@
 content:
-  - task7_Glass
-  - task8_Glass
   - task9_Date
-  - task10_Glass
   - task1_Node__init__repr__
   - task2_Node_is_valid_set_node
   - task5_Node_algo_linked_nodes
