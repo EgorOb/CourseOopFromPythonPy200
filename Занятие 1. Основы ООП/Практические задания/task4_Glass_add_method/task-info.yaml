@@ -5,10 +5,10 @@ files:
     placeholders:
       - offset: 898
         length: 299
-        placeholder_text: "...  # TODO Допишите метод"
+        placeholder_text: "...  # TODO Допишите метод. Не забываем про проверки"
       - offset: 1243
         length: 285
-        placeholder_text: "...  # TODO Допишите метод"
+        placeholder_text: "...  # TODO Допишите метод. Не забываем про проверки"
       - offset: 1591
         length: 19
         placeholder_text: '# TODO Добавьте 50 единиц воды через метод'
