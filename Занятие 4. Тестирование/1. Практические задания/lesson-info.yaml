@@ -1,4 +1,5 @@
 content:
+  - task1_simple_test
   - task2_foo
   - task3_error
   - task4_tests
@@ -7,8 +8,9 @@ content:
   - task6_class
   - task7_module
   - task8_passed
-  - task10_Node
   - task9_coverage_1
   - task9_coverage_2
   - task9_coverage_3
-  - task1_simple_test
+  - task10_Node
+
+

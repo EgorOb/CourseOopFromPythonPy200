@@ -3,6 +3,6 @@ content:
   - task2_Glass_attr
   - task3_Glass_method_outside_init
   - task4_Glass_add_method
-  - task4_Glass__repr__
-  - task5_Glass__str__
-  - task6_Node_methods
+  - task5_Glass_doctest
+  - task6_Pen_many_class
+  - task7_PiggyBank
