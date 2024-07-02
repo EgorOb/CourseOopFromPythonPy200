@@ -1,5 +1,9 @@
 type: edu
 files:
+  - name: __init__.py
+    visible: false
+  - name: tests/test_task.py
+    visible: false
   - name: task.py
     visible: true
     placeholders:
@@ -9,9 +13,5 @@ files:
       - offset: 854
         length: 499
         placeholder_text: "...  # TODO реализуйте метод как в описании"
-  - name: tests/test_task.py
-    visible: false
-  - name: __init__.py
-    visible: false
   - name: tests/__init__.py
     visible: false

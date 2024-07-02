@@ -23,3 +23,6 @@ class Date:
     def is_valid_date(self, day: int, month: int, year: int):
         """Проверяет, является ли дата корректной"""
         ...  # TODO проверить валидность даты
+if __name__ == "__main__":
+    # Write your solution here
+    pass
