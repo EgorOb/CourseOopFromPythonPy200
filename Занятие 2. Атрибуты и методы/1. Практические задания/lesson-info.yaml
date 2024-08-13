@@ -2,17 +2,17 @@ content:
   - task1_system_user_attr
   - task2_Glass__dict__
   - task3_Glass__class__
-  - task4_Glass__class__name__
-  - task5_Figure_classmethod_staticmethod
+  - task4_Glass__str__
+  - task5_Glass__repr__
+  - task6_Glass__class__name__
+  - task7_create_attr
+  - task8_Figure_classmethod_staticmethod
   - task6_6_LinkedList_in
-
   - task6_5_LinkedList_sorted
   - task6_9_LinkedList_append
-
   - task6_8_LinkedList__bool__
   - task6_3_LinkedList_loop_for
   - task6_7_LinkedList_reversed
   - task6_2_LinkedList__getitem__
   - task6_4_LInkedList__str___over_for
   - task6_1_LinkedList_init_linked_list
-
