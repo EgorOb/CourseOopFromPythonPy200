@@ -1,0 +1,24 @@
+content:
+  - task6_6_LinkedList_in
+  - task6_5_LinkedList_sorted
+  - task6_9_LinkedList_append
+  - task6_8_LinkedList__bool__
+  - task6_3_LinkedList_loop_for
+  - task6_7_LinkedList_reversed
+  - task6_2_LinkedList__getitem__
+  - task6_4_LInkedList__str___over_for
+  - task6_1_LinkedList_init_linked_list
+  - task3_8_LinkedList_pop
+  - task3_4_LinkedList_index
+  - task3_6_LinkdeList_count
+  - task3_5_LinkedList_insert
+  - task3_7_LinkedList_extend
+  - task3_2_LinkedList__setitem__
+  - task3_3_LinkedList__delitem__
+  - task3_1_LinkedList__getitem__str__repr__
+  - task1_Node__init__repr__
+  - task2_Node_is_valid_set_node
+  - task5_Node_algo_linked_nodes
+  - task3_Node_linked_nodes_method
+  - task4_Node_list_comprehension_loop_for
+  - task6_Node_methods

@@ -1,0 +1,59 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 263
+        length: 42
+        placeholder_text: '# TODO Создайте классовые атрибуты total_products (инициализируйте
+      нулем) и total_revenue (инициализируйте нулем)'
+      - offset: 732
+        length: 26
+        placeholder_text: '# TODO Обновите значение классового атрибута total_revenue'
+      - offset: 831
+        length: 27
+        placeholder_text: '# TODO Обновите значение классового атрибута total_products'
+      - offset: 1182
+        length: 102
+        placeholder_text: "# TODO Проверьте, что если запрашиваемого числа товара нет\
+      \ на складе, то вызывается ошибка ValueError"
+      - offset: 1293
+        length: 23
+        placeholder_text: '# TODO Уменьшите количество товара на складе (self.quantity)
+      на соответствующее значение (amount)'
+      - offset: 1335
+        length: 19
+        placeholder_text: '# TODO посчитайте выручку как количество проданного товара
+      умноженное на цену товара'
+      - offset: 1363
+        length: 40
+        placeholder_text: '# TODO Добавить выручку (revenue) к классовой переменной отвечающей
+      за общую выручку'
+      - offset: 1412
+        length: 38
+        placeholder_text: "# TODO Уменьшите значение классовой переменной total_products,\
+      \ так как общее чмсор товаров изменилось"
+      - offset: 1741
+        length: 23
+        placeholder_text: '# TODO Увеличьте количество товара на складе (self.quantity)
+      на соответствующее значение (amount)'''
+      - offset: 1773
+        length: 37
+        placeholder_text: '# TODO Увеличьте общее число товаров total_products (классовый
+      атрибут)'
+      - offset: 2346
+        length: 57
+        placeholder_text: '# TODO Верните общее количество всех товаров в магазине.'
+      - offset: 2541
+        length: 73
+        placeholder_text: '# TODO Верните общую стоимость всех товаров в магазине.'
+      - offset: 2704
+        length: 197
+        placeholder_text: "# TODO Реализуйте сравнивание цен. Верните название товара\
+      \ с большей ценой, если одинаковые, то верните 'Цены одинаковы'."
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

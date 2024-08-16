@@ -1,0 +1,13 @@
+content:
+  - task2_4_LinkedList__eq__
+  - task2_5_LinkedList__lt__
+  - task2_1_LinkedList__mul__
+  - task2_2_LinkedList__imul__
+  - task2_3_LinkedList__rmul__
+  - task3_2_Node_setter
+  - task4_3_LinkedList__add__
+  - task3_1_Node_encapsulation
+  - task4_4_LinkedList__iadd__
+  - task4_5_LinkedList__radd__
+  - task4_1_LinkedList_append_tail
+  - task4_2_LinkedList_head_tail_property
