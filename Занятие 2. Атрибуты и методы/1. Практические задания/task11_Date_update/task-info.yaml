@@ -1,0 +1,23 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 520
+        length: 103
+        placeholder_text: "...  # TODO Реализовать метод проверки високосного года"
+      - offset: 773
+        length: 125
+        placeholder_text: "...  # TODO используя атрибут класса DAY_OF_MONTH вернуть к\
+      оличество дней в запрашиваемом месяце и году (учтите, что от високосного год\
+      а меняется строка в DAY_OF_MONTH)"
+      - offset: 1031
+        length: 213
+        placeholder_text: "...  # TODO Проверить валидность даты, если дата невалидная\
+      \ вызвать ValueError, если валидная, то вернуть True"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

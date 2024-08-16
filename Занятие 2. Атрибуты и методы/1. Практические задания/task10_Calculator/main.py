@@ -1,5 +1,11 @@
 class Calculator:
-    ...  # TODO написать статические методы
+    @staticmethod
+    def add(a, b):
+        return a + b
+
+    @staticmethod
+    def mul(a, b):
+        return a * b
 
 
 if __name__ == "__main__":

@@ -1,11 +1,2 @@
 content:
-  - task1_Calculator
-  - task3_8_LinkedList_pop
-  - task3_4_LinkedList_index
-  - task3_6_LinkdeList_count
-  - task3_5_LinkedList_insert
-  - task3_7_LinkedList_extend
-  - task3_2_LinkedList__setitem__
-  - task3_3_LinkedList__delitem__
-  - task2_Date_classmethod_staticmethod
-  - task3_1_LinkedList__getitem__str__repr__
+  -

@@ -1,0 +1,22 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 77
+        length: 327
+        placeholder_text: "# TODO Инициализируйте переменные с проверкой соответствия\
+      \ типа, если не соответствует, то вызывайте ошибку TypeError"
+      - offset: 437
+        length: 55
+        placeholder_text: "... # TODO Реализуйте возвращение в формате DD/MM/YYYY"
+      - offset: 526
+        length: 95
+        placeholder_text: "... # TODO Реализуйте возвращение в формате Date(day=..., month=...,\
+      \ year=...)"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

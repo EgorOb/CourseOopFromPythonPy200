@@ -1,0 +1,23 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 82
+        length: 14
+        placeholder_text: '# TODO Создайте классовый атрибут total_dogs и инициализируйте
+      его со значением ноль (total_dogs = 0)'
+      - offset: 240
+        length: 19
+        placeholder_text: "# TODO Увеличьте значение классового атрибута, обратиться м\
+      ожно через название класса (Dog.total_dogs += 1)"
+      - offset: 388
+        length: 14
+        placeholder_text: "...  # TODO Верните значение классового атрибута, вспомните\
+      , что когда работаем с классовым атрибутом то пишем cls, а не self (cls.total_dogs)"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

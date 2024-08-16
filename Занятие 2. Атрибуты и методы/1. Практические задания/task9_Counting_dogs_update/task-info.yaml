@@ -1,0 +1,14 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 230
+        length: 23
+        placeholder_text: '# TODO  Обновите классовый атрибут total_dogs'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

@@ -1,0 +1,17 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 22
+        length: 53
+        placeholder_text: '# TODO Написать статический метод add для сложения двух чисел'
+      - offset: 81
+        length: 53
+        placeholder_text: '# TODO  Написать статический метод mul для умножения двух чисел'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false
