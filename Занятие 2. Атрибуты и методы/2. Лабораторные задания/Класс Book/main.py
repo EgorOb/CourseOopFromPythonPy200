@@ -1,3 +1,4 @@
+# База данных книг для проверки
 BOOKS_DATABASE = [
     {
         "id": 1,
@@ -13,7 +14,14 @@ BOOKS_DATABASE = [
 
 
 class Book:
-    ...
+    def __init__(self, id_, name, pages):
+        pass
+
+    def __str__(self):
+        pass
+
+    def __repr__(self):
+        pass
 
 
 if __name__ == '__main__':

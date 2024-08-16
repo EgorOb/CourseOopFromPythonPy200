@@ -14,3 +14,5 @@
     ```text
     Book(id_=1, name='test_name_1', pages=200)
     ```
+
+В блоке `if __name__ == '__main__':` данные книг берутся из словаря `BOOKS_DATABASE`

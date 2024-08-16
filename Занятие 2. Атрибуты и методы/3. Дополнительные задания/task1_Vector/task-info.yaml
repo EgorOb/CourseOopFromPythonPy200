@@ -1,0 +1,20 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 313
+        length: 49
+        placeholder_text: "... # TODO реализуйте вычитание"
+      - offset: 402
+        length: 49
+        placeholder_text: "... # TODO реализуйте умножение"
+      - offset: 495
+        length: 49
+        placeholder_text: "... # TODO реализуйте деление"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

@@ -1,22 +1,21 @@
 type: output
 files:
-- name: __init__.py
-  visible: false
-- name: tests/output.txt
-  visible: false
-- name: main.py
-  visible: true
-  placeholders:
-  - offset: 188
-    length: 19
-    placeholder_text: '# TODO написать класс Book'
-    dependency:
-      section: Атрибуты и методы
-      lesson: Лабораторная 2
-      task: Класс Book
-      file: linked_list.py
-      placeholder: 1
-      is_visible: false
-  - offset: 210
-    length: 22
-    placeholder_text: '# TODO написать класс Library'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 220
+        length: 19
+        placeholder_text: '# TODO Импортируйте и скопируйте ранее написанный класс Book'
+      - offset: 545
+        length: 4
+        placeholder_text: "pass # TODO дописать метод"
+      - offset: 777
+        length: 4
+        placeholder_text: "pass # TODO дописать метод"
+      - offset: 1195
+        length: 4
+        placeholder_text: "pass # TODO дописать метод"

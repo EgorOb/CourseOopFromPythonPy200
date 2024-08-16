@@ -1,12 +1,18 @@
 type: output
 files:
-- name: __init__.py
-  visible: false
-- name: tests/output.txt
-  visible: false
-- name: main.py
-  visible: true
-  placeholders:
-  - offset: 188
-    length: 19
-    placeholder_text: '# TODO написать класс Book'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 282
+        length: 4
+        placeholder_text: "pass # TODO дописать метод"
+      - offset: 319
+        length: 4
+        placeholder_text: "pass # TODO дописать метод"
+      - offset: 357
+        length: 4
+        placeholder_text: "pass # TODO дописать метод"

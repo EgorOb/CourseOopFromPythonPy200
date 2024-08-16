@@ -1,0 +1,17 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 330
+        length: 60
+        placeholder_text: "...  # TODO реализуйте проверку \"меньше\""
+      - offset: 429
+        length: 61
+        placeholder_text: "...  # TODO реализуйте проверку \"меньше или равно\""
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false
