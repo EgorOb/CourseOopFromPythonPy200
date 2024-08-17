@@ -1,0 +1,20 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false
+  - name: img.png
+    visible: false
+  - name: img_1.png
+    visible: false
+  - name: img_2.png
+    visible: false
+  - name: img_3.png
+    visible: false
+  - name: img_4.png
+    visible: false

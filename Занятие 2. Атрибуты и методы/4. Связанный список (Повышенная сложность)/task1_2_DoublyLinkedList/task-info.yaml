@@ -8,3 +8,5 @@ files:
     visible: false
   - name: tests/input.txt
     visible: false
+  - name: img_3.png
+    visible: false
