@@ -1,0 +1,5 @@
+42
+42
+'MyClass' object has no attribute '__value'
+'MyClass' object has no attribute '__my_method'
+42

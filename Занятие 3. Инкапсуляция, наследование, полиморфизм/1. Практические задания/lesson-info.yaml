@@ -1,4 +1,8 @@
 content:
+  - task1_1_theory
+  - task1_2_theory
+  - task1_3_theory
+  - task1_2_Counter
   - task2_Date_property
   - task1_1_Figure_super
   - task1_3_Figure_polymorphism_with_super
