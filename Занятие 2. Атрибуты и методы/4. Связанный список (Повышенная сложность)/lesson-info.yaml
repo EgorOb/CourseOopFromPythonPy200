@@ -3,34 +3,19 @@ content:
   - task1_2_DoublyLinkedList
   - task1_3_CircularLinkedList
   - task2_1_Node__init__repr__
-  - task2_2_Node_is_valid_set_node
-  - task2_3_Node_linked_nodes_method
-  - task2_4_Node_list_comprehension_loop_for
+  - task2_2_Node_list_comprehension_loop_for
+  - task2_3_Node_is_valid_set_node
+  - task2_4_Node_linked_nodes_method
   - task2_5_Node_algo_linked_nodes
   - task2_6_Node_methods
-  - task3_1_LinkedList__getitem__str__repr__
-  - task3_2_LinkedList__setitem__
-  - task3_3_LinkedList__delitem__
-  - task3_4_LinkedList_index
-  - task3_5_LinkedList_insert
-  - task3_6_LinkdeList_count
-  - task3_7_LinkedList_extend
-  - task3_8_LinkedList_pop
-  - task6_1_LinkedList_init_linked_list
-  - task6_2_LinkedList__getitem__
-  - task6_3_LinkedList_loop_for
-  - task6_4_LInkedList__str___over_for
-  - task6_5_LinkedList_sorted
-  - task6_6_LinkedList_in
-  - task6_7_LinkedList_reversed
-  - task6_8_LinkedList__bool__
-  - task6_9_LinkedList_append
-
-
-
-
-
-
-
-
-
+  - task3_1_LinkedList_init_linked_list
+  - task3_2_LinkedList_append_extend
+  - task3_3_LinkedList_step_by_step_on_node
+  - task3_4_LinkedList__getitem__setitem__delitem__
+  - task3_5_LinkedList_in
+  - task3_6_LinkedList_loop_for
+  - task3_7_LinkedList_sorted
+  - task3_8_LinkedList__bool__
+  - task3_9_LinkedList_insert_index_count_pop
+  - task3_10_LinkedList__add__sub__
+  - task4_1_DoublyLinkedList_reversed

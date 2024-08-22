@@ -1,0 +1,26 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 515
+        length: 11
+        placeholder_text: "...  # TODO создайте узел со значением value"
+      - offset: 634
+        length: 23
+        placeholder_text: "...  # TODO установите головной узел как new_node"
+      - offset: 694
+        length: 9
+        placeholder_text: "...  # TODO установить значение головного узла"
+      - offset: 827
+        length: 12
+        placeholder_text: "...  # TODO как текущее значение используем соседа (current.next)"
+      - offset: 1157
+        length: 51
+        placeholder_text: "...  # TODO реализуйте добавления элементов в конец в цикле"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: node.py
+    visible: true

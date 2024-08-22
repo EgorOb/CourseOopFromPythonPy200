@@ -1,0 +1,28 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 399
+        length: 45
+        placeholder_text: '# TODO установить значение следующего узла с помощью метода
+      set_next'
+      - offset: 735
+        length: 157
+        placeholder_text: "...  # TODO реализуйте проверку корректности связываемого у\
+      зла"
+      - offset: 1101
+        length: 78
+        placeholder_text: '# TODO метод должен проверить корректность узла (метод is_valid)
+      и установить значение атрибуту next'
+      - offset: 1213
+        length: 46
+        placeholder_text: '# TODO инициализируйте узел first_node со значением 1 и second_node
+      со значением 2'
+      - offset: 1265
+        length: 32
+        placeholder_text: '# TODO свяжите первый узел со вторым'

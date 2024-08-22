@@ -1,0 +1,21 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 4183
+        length: 172
+        placeholder_text: '# TODO добавьте метод __iter__ из описания задачи'
+      - offset: 4361
+        length: 408
+        placeholder_text: '# TODO добавьте метод __next__ из описания задачи'
+      - offset: 4885
+        length: 44
+        placeholder_text: '# TODO с помощью цикла for распечатать в столбик все значения
+      связного списка'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: node.py
+    visible: true

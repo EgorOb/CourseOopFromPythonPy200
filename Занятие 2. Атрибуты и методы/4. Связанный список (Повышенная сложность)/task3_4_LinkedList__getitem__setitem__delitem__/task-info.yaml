@@ -1,0 +1,47 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 2412
+        length: 15
+        placeholder_text: "...  # TODO верините атрибут длины"
+      - offset: 2628
+        length: 33
+        placeholder_text: "...  # TODO получите узел при помощи метода step_by_step_on_nodes\
+      \ по требуемому индексу"
+      - offset: 2670
+        length: 17
+        placeholder_text: "...  # TODO верните значение узла"
+      - offset: 2938
+        length: 31
+        placeholder_text: "...  # TODO получите узел при помощи метода step_by_step_on_nodes\
+      \ по требуемому индексу"
+      - offset: 2978
+        length: 18
+        placeholder_text: "...  # TODO в атрибут value объекта node установите новое з\
+      начение"
+      - offset: 3350
+        length: 14
+        placeholder_text: "...  # TODO установите значение ссылки на следующий элемент"
+      - offset: 3444
+        length: 35
+        placeholder_text: "...  # TODO найдите предыдущий узел (предыдущий относительн\
+      о key)"
+      - offset: 3583
+        length: 18
+        placeholder_text: "...  # TODO получите значение текущего узла через предыдущи\
+      й"
+      - offset: 3746
+        length: 43
+        placeholder_text: "...  # TODO свяжите предыдущий узел (previous_node) и следу\
+      ющий (next_node)  используя linked_nodes"
+      - offset: 3799
+        length: 13
+        placeholder_text: "...  # TODO обновите значение длины после удаления"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: node.py
+    visible: true

@@ -1,0 +1,16 @@
+type: output
+files:
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 544
+        length: 28
+        placeholder_text: "...  # TODO с помощью list comprehension сделать список узл\
+      ов со значениями от 0 до 9"
+      - offset: 600
+        length: 49
+        placeholder_text: '# TODO распечатать значения узлов'

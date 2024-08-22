@@ -1,0 +1,16 @@
+type: output
+files:
+  - name: task.py
+    visible: true
+    placeholders:
+      - offset: 1401
+        length: 30
+        placeholder_text: '# TODO реализовать функцию (в левую ноду устанавливаем ссылку
+      через соответствующий метод)'
+      - offset: 1517
+        length: 37
+        placeholder_text: '# TODO связать между собой два узла с помощью функции linked_nodes'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false

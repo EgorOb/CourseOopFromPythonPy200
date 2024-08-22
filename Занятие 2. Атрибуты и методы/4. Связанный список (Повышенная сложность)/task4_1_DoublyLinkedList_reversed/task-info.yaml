@@ -1,0 +1,14 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 5028
+        length: 310
+        placeholder_text: '# TODO добавьте метод __reversed__ из описания задачи'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: node.py
+    visible: true

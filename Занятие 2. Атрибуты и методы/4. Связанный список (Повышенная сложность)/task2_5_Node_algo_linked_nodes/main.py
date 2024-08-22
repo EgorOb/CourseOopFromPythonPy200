@@ -19,13 +19,22 @@ class Node:
         return f"Node({self.value}, {None})" if self.next is None else f"Node({self.value}, Node({self.next}))"
 
     def __str__(self) -> str:
-        ...  # TODO метод должен возвращать значение текущего узла
+        return str(self.value)
 
     def is_valid(self, node: Any) -> None:
-        if not isinstance(node, (type(None), Node)):
-            raise TypeError
+        """
+        Проверяет корректность узла.
+        :param node: Узел для проверки
+        :raises TypeError: Если узел некорректного типа
+        """
+        if not isinstance(node, (Node, type(None))):
+            raise TypeError(f"Некорректный тип узла: ожидался 'Node' или 'None', получен {type(node).__name__}")
 
     def set_next(self, next_: Optional["Node"] = None) -> None:
+        """
+        Устанавливает следующий узел, проверяя его корректность.
+        :param next_: Следующий узел или None
+        """
         self.is_valid(next_)
         self.next = next_
 
@@ -42,8 +51,10 @@ def linked_nodes(left_node: Node, right_node: Optional["Node"] = None) -> None:
 
 if __name__ == "__main__":
     list_nodes = [Node(value) for value in range(5)]
-    print(list_nodes)
+    print(list_nodes)  # [Node(0, None), Node(1, None), Node(2, None), Node(3, None), Node(4, None)]
+    print(list_nodes[0])  # 0
 
-    # TODO реализуйте алгоритм, который свяжет между собой узлы в списке
+    for idx, node in enumerate(list_nodes[:-1]):
+        linked_nodes(node, list_nodes[idx+1])
 
-    print(list_nodes)
+    print(list_nodes)  # [Node(0, Node(1)), Node(1, Node(2)), Node(2, Node(3)), Node(3, Node(4)), Node(4, None)]
