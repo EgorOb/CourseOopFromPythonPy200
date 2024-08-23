@@ -1,0 +1,22 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 121
+        length: 59
+        placeholder_text: '# TODO создайте приватные атрибуты для пароля и адреса'
+      - offset: 327
+        length: 22
+        placeholder_text: "# TODO если роль 'admin', то вернуть True"
+      - offset: 405
+        length: 133
+        placeholder_text: "...  # TODO провести проверку доступа по роли, если прошла\
+      , то вернуть пароль, если не прошел проверку, то вызвать исключение PermissionError\
+      \ с текстом 'Доступ запрещен'"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

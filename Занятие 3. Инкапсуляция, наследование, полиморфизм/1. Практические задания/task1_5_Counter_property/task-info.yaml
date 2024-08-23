@@ -1,0 +1,24 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 267
+        length: 64
+        placeholder_text: |-
+          # TODO перепишите get_value и сделайте его свойством (getter) value
+              def get_value(self) -> int:
+                  return self._value
+      - offset: 337
+        length: 65
+        placeholder_text: '# TODO  напишите свойство (getter) max_value'
+      - offset: 408
+        length: 208
+        placeholder_text: '# TODO  напишите свойство (setter) max_value с проверками на
+      входной тип и значение'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

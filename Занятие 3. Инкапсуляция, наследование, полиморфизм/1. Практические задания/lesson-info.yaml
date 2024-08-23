@@ -2,8 +2,11 @@ content:
   - task1_1_theory
   - task1_2_theory
   - task1_3_theory
-  - task1_2_Counter
-  - task2_Date_property
-  - task1_1_Figure_super
+  - task1_4_Counter
+  - task1_5_Counter_property
+  - task1_6_User
+  - task2_1_theory
+  - task2_4_Figure_super
   - task1_3_Figure_polymorphism_with_super
   - task1_2_Figure_polymorphism_inheritance
+  - task3_1_theory
