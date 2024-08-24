@@ -6,7 +6,8 @@ content:
   - task1_5_Counter_property
   - task1_6_User
   - task2_1_theory
+  - task2_2_theory
+  - task3_1_theory
   - task2_4_Figure_super
   - task1_3_Figure_polymorphism_with_super
   - task1_2_Figure_polymorphism_inheritance
-  - task3_1_theory

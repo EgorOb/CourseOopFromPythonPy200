@@ -38,17 +38,19 @@ class Rectangle:
         """Вычисляемый метод для площади прямоугольника"""
         return self._width * self._height
 
-# Пример использования
-rect = Rectangle(5, 10)
-
-print(rect.get_width())  # 5
-rect.set_width(7)
-print(rect.area())  # 70
-
-try:
-    rect.set_width(-3)  # Ошибка: ValueError: Ширина должна быть положительным числом
-except ValueError as err:
-    print(repr(err))
+if __name__ == "__main__":
+    
+    # Пример использования
+    rect = Rectangle(5, 10)
+    
+    print(rect.get_width())  # 5
+    rect.set_width(7)
+    print(rect.area())  # 70
+    
+    try:
+        rect.set_width(-3)  # Ошибка: ValueError: Ширина должна быть положительным числом
+    except ValueError as err:
+        print(repr(err))
 ```
 
 Для визуального упрощения работы с концепцией setter и getter в Python есть концепция под названием свойства. Свойства также
@@ -142,17 +144,19 @@ class RectangleProperty:
         """Вычисляемое свойство для площади прямоугольника"""
         return self._width * self._height
 
-# Пример со свойствами
-rect = RectangleProperty(5, 10)
-
-print(rect.width)  # 5
-rect.width = 7
-print(rect.area)  # 70
-
-try:
-    rect.width = -3  # Ошибка: ValueError: Ширина должна быть положительным числом
-except ValueError as err:
-    print(repr(err))
+if __name__ == "__main__":
+    
+    # Пример со свойствами
+    rect = RectangleProperty(5, 10)
+    
+    print(rect.width)  # 5
+    rect.width = 7
+    print(rect.area)  # 70
+    
+    try:
+        rect.width = -3  # Ошибка: ValueError: Ширина должна быть положительным числом
+    except ValueError as err:
+        print(repr(err))
 ```
 
 ### Преимущества свойств
