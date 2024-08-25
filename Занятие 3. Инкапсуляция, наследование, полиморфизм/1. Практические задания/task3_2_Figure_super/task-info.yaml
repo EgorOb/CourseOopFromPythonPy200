@@ -1,0 +1,12 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 202
+        length: 22
+        placeholder_text: '# TODO вызвать конструктор базового класса с помощью super()'
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false

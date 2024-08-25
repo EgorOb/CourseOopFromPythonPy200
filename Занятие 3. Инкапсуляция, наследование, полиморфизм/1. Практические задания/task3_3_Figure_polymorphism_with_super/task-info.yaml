@@ -1,0 +1,13 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 388
+        length: 14
+        placeholder_text: "...  # TODO c помощью super вызвать метод area базового кла\
+      сса"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false

@@ -1,0 +1,24 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 237
+        length: 63
+        placeholder_text: '# TODO определить конструктор'
+      - offset: 306
+        length: 79
+        placeholder_text: "# TODO перегрузить метод area, чтобы он возвращал площадь,\
+      \ но не терял родительский функционал"
+      - offset: 451
+        length: 41
+        placeholder_text: '# TODO определить конструктор'
+      - offset: 498
+        length: 89
+        placeholder_text: |-
+          # TODO перегрузить метод area, чтобы он возвращал площадь,
+          но не терял родительский функционал"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false

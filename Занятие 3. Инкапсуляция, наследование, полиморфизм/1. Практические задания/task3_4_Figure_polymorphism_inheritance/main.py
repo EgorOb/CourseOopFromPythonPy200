@@ -11,22 +11,31 @@ class Figure:
 
 class Rectangle(Figure):
     """ Производный класс. Прямоугольник. """
+    def __init__(self, a, b):
+        self.a = a
+        self.b = b
 
-    ...  # TODO определить конструктор и перегрузить метод area
+    def area(self):
+        super().area()
+        return round(self.a * self.b, 3)
 
 
 class Circle(Figure):
     """ Производный класс. Круг. """
+    def __init__(self, a):
+        self.a = a
 
-    ...  # TODO определить конструктор и перегрузить метод area
+    def area(self):
+        super().area()
+        return round(self.a * self.a * math.pi, 3)
 
 
 if __name__ == "__main__":
     fig = Figure()
-    fig.area()
+    print(fig.area())
 
     rect = Rectangle(5, 10)
-    rect.area()
+    print(rect.area())
 
     circle = Circle(5)
-    circle.area()
+    print(circle.area())
