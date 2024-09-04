@@ -1,0 +1,17 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 1308
+        length: 166
+        placeholder_text: "...  # TODO реализуйте метод"
+      - offset: 1698
+        length: 242
+        placeholder_text: "...  # TODO Реализуйте метод"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

@@ -7,8 +7,9 @@ content:
   - task1_6_User
   - task2_1_theory
   - task2_2_theory
+  - task2_3_Bank_account
   - task3_1_theory
   - task3_2_Figure_super
   - task3_3_Figure_polymorphism_with_super
   - task3_4_Figure_polymorphism_inheritance
-  - task3_5_Burger
+  - task3_5_Bank_account
