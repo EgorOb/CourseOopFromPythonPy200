@@ -1,0 +1,80 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 731
+        length: 61
+        placeholder_text: "...  # TODO реализуйте проверку"
+      - offset: 950
+        length: 62
+        placeholder_text: "...  # TODO реализуйте проверку"
+      - offset: 1251
+        length: 131
+        placeholder_text: "...  # TODO реализуйте проверку"
+      - offset: 1869
+        length: 76
+        placeholder_text: '# TODO добавьте свойство is_checked_out (на чтение)'
+      - offset: 1951
+        length: 58
+        placeholder_text: '# TODO добавьте свойство title (на чтение)'
+      - offset: 2015
+        length: 60
+        placeholder_text: '# TODO добавьте свойство author (на чтение)'
+      - offset: 2081
+        length: 80
+        placeholder_text: '# TODO добавьте свойство publication_year (на чтение)'
+      - offset: 2604
+        length: 110
+        placeholder_text: "... # TODO Инициализируйте переменные от LibraryItem и доба\
+      вьте новый приватный атрибут genre. Не забудьте, что нужна валидация перед з\
+      аписью"
+      - offset: 2870
+        length: 60
+        placeholder_text: "...  # TODO написать метод валидации"
+      - offset: 2936
+        length: 58
+        placeholder_text: '# TODO добавьте свойство genre (на чтение)'
+      - offset: 3000
+        length: 139
+        placeholder_text: "# TODO  переопределите метод get_info, чтобы он отображал и\
+      нформацию специфичную для книги (Книга: 'Название книги',  Автор: 'Кто напис\
+      ал', Жанр: 'Жанр книги', Год издания: 'Год')"
+      - offset: 3342
+        length: 146
+        placeholder_text: "... # TODO Инициализируйте переменные от LibraryItem и доба\
+      вьте новый приватный атрибут issue_number. Не забудьте, что нужна валидация\
+      \ перед записью"
+      - offset: 3658
+        length: 67
+        placeholder_text: "...  # TODO написать метод валидации"
+      - offset: 3731
+        length: 72
+        placeholder_text: '# TODO добавьте свойство issue_number (на чтение)'
+      - offset: 3809
+        length: 134
+        placeholder_text: "# TODO  переопределите метод get_info, чтобы он отображал и\
+      нформацию специфичную для журнала (Журнал: 'Название журнала',  Номер выпуск\
+      а: 'Номер', Год издания: 'Год')"
+      - offset: 4016
+        length: 245
+        placeholder_text: "... # TODO Инициализируйте переменные от LibraryItem и доба\
+      вьте новый приватный атрибут publication_date. Не забудьте, что нужна валида\
+      ция перед записью"
+      - offset: 4731
+        length: 243
+        placeholder_text: "...  # TODO написать метод валидации"
+      - offset: 4980
+        length: 80
+        placeholder_text: '# TODO добавьте свойство publication_date (на чтение)'
+      - offset: 5066
+        length: 137
+        placeholder_text: "# TODO  переопределите метод get_info, чтобы он отображал и\
+      нформацию специфичную для газеты (Газета: 'Название газеты',  Дата выпуска:\
+      \ 'Дата', Год издания: 'Год')"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false
