@@ -1,11 +1,13 @@
 import datetime
+import json
 
 
 class LibraryItem:
     """
     Базовый класс для библиотечных материалов
     """
-    def __init__(self, title: str, author: str, publication_year: int | None = None):
+
+    def __init__(self, title: str, author: str | None = None, publication_year: int | None = None):
         """
         title - Название книги
         author - Автор
@@ -17,7 +19,7 @@ class LibraryItem:
         self.__validate_author(author)
         self.__author = author
 
-        self.__validate_publication_year()
+        self.__validate_publication_year(publication_year)
         self.__publication_year = publication_year
 
         self.__is_checked_out = False
@@ -33,9 +35,9 @@ class LibraryItem:
     @staticmethod
     def __validate_author(author: str):
         """
-        Проверка на соответствие типу str, иначе ошибка TypeError
+        Проверка на соответствие типу str или None, иначе ошибка TypeError
         """
-        if not isinstance(author, str):
+        if not isinstance(author, (str, type(None))):
             return TypeError()
 
     @staticmethod
@@ -65,7 +67,7 @@ class LibraryItem:
 
     @property
     def is_checked_out(self):
-        return self.__is_checked_out
+        return "Выдано" if self.__is_checked_out else "Доступно"
 
     @property
     def title(self):
@@ -80,8 +82,7 @@ class LibraryItem:
         return self.__publication_year
 
     def __str__(self):
-        status = "Выдано" if self.__is_checked_out else "Доступно"
-        return f"'{self.__title}' от {self.__author} ({self.__publication_year}) — {status}"
+        return f"'{self.__title}' от {self.__author} ({self.__publication_year}) — {self.is_checked_out}"
 
     def get_info(self):
         return None
@@ -91,12 +92,13 @@ class Book(LibraryItem):
     """
     Класс для книг
     """
+
     def __init__(self, title: str, author: str, genre: str, publication_year: int | None = None):
         """
         genre - Жанр
         """
         super().__init__(title, author, publication_year)
-        self.__validate_genre()
+        self.__validate_genre(genre)
         self.__genre = genre
 
     @staticmethod
@@ -119,12 +121,13 @@ class Magazine(LibraryItem):
     """
     Класс для журналов
     """
+
     def __init__(self, title, publication_year, issue_number):
         """
         issue_number - Номер выпуска
         """
         super().__init__(title=title, publication_year=publication_year)
-        self.__validate_issue_number()
+        self.__validate_issue_number(issue_number)
         self.__issue_number = issue_number
 
     @staticmethod
@@ -147,6 +150,7 @@ class Newspaper(LibraryItem):
     """
     Класс для газет
     """
+
     def __init__(self, title, publication_year, publication_date):
         super().__init__(title=title, publication_year=publication_year)
         self.__validate_publication_date(publication_date)
@@ -178,6 +182,7 @@ class LibraryManager:
     """
     Класс для управления библиотечными материалами
     """
+
     def __init__(self):
         self.items = []
 
@@ -213,8 +218,13 @@ class LibraryManager:
         """
         Отображение списка всех книг
         """
+        column1_width = 100
+        column2_width = 30
+        print(f"|{'Материал':^{column1_width}}|{'Статус':^{column2_width}}|")
+        print(f"|{'':-<{column1_width}}|{'':-<{column2_width}}|")
         for item in self.items:
-            print(item)
+            print(f"|{item.get_info():{column1_width}}|{item.is_checked_out:^{column2_width}}|")
+        print(f"|{'':-<{column1_width}}|{'':-<{column2_width}}|")
 
     def search_by_title(self, title):
         """
@@ -230,14 +240,28 @@ class LibraryManager:
 
 
 if __name__ == "__main__":
+    # Считывание данных для записи
+    with open('library_items.json', encoding="utf-8") as file:
+        books = json.load(file)
+
     # Создаем менеджер библиотеки
     library_manager = LibraryManager()
 
     # Добавляем материалы в библиотеку
-    library_manager.add_item(Book("1984", "George Orwell", 1949, "Dystopian"))
-    library_manager.add_item(Book("To Kill a Mockingbird", "Harper Lee", 1960, "Fiction"))
-    library_manager.add_item(Magazine("National Geographic", 2024, 5))
-    library_manager.add_item(Newspaper("The New York Times", 2024, "01.09.2024"))
+    for data_book in books:
+        if data_book['type'] == 'Книга':
+            library_manager.add_item(Book(title=data_book['title'],
+                                          author=data_book['author'],
+                                          genre=data_book['genre'],
+                                          publication_year=data_book['publication_year']))
+        elif data_book['type'] == 'Журнал':
+            library_manager.add_item(Magazine(title=data_book['title'],
+                                              issue_number=data_book['issue_number'],
+                                              publication_year=data_book['publication_year']))
+        elif data_book['type'] == 'Газета':
+            library_manager.add_item(Newspaper(title=data_book['title'],
+                                               publication_date=data_book['publication_date'],
+                                               publication_year=data_book['publication_year']))
 
     # Отображаем все доступные материалы
     print("Доступные материалы:")
