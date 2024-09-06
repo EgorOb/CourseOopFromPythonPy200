@@ -4,13 +4,19 @@ class PermissionError(Exception):
 
 
 class Role:
-    """Класс, представляющий роль пользователя."""
+    """Класс, представляющий роль пользователя и его права."""
 
-    def __init__(self, role_name: str):
-        self.role_name = role_name
+    def __init__(self, name: str, permissions: dict):
+        """
+        :param name: Название роли (например, 'admin', 'user')
+        :param permissions: Словарь прав, где ключ — действие (например, 'view_password'), а значение — bool
+        """
+        self.name = name
+        self.permissions = permissions
 
-    def __repr__(self):
-        return f"Role({self.role_name})"
+    def has_permission(self, action: str) -> bool:
+        """Проверяет, есть ли у роли разрешение на конкретное действие."""
+        return self.permissions.get(action, False)
 
 
 class User:
@@ -23,47 +29,49 @@ class User:
         self.role = role
 
     def get_password(self) -> str:
-        return self.__password
+        """
+        Проверяет есть ли у пользователя право на просмотр пароля ('view_password').
+        Если такое разрешение есть, то возвращает пароль,
+        если нет, то вызывает ошибку PermissionError
+        """
+        if self.role.has_permission("view_password"):
+            return self.__password
+        else:
+            raise PermissionError("Доступ запрещен к паролю")
 
     def get_address(self) -> str:
-        return self.__address
-
-
-class AccessControl:
-    """Класс для управления доступом к данным пользователя."""
-
-    def __init__(self, user: User):
-        self.user = user
-
-    def has_permission(self, role_name: str) -> bool:
-        """Проверяет, имеет ли текущий пользователь необходимые права."""
-        return self.user.role.role_name == role_name
-
-    def get_sensitive_data(self, data_type: str, role_name: str) -> str:
-        """Возвращает конфиденциальные данные, если есть необходимые права."""
-        if not self.has_permission(role_name):
-            raise PermissionError("Access denied")
-
-        if data_type == "password":
-            return self.user.get_password()
-        elif data_type == "address":
-            return self.user.get_address()
+        """
+        Проверяет есть ли у пользователя право на просмотр адреса ('view_address').
+        Если такое разрешение есть, то возвращает адрес,
+        если нет, то вызывает ошибку PermissionError
+        """
+        if self.role.has_permission("view_address"):
+            return self.__address
         else:
-            raise ValueError("Unknown data type")
+            raise PermissionError("Доступ запрещен к адресу")
 
 
 if __name__ == "__main__":
-    admin_role = Role("admin")
-    user_role = Role("user")
+    # Настройка прав
+    admin_permissions = {"view_password": True, "view_address": True}
+    user_permissions = {"view_address": True}
 
-    admin_user = User("admin_user", "admin_secret", "123 Admin St", admin_role)
-    normal_user = User("normal_user", "user_secret", "456 User St", user_role)
+    # Создание ролей
+    admin_role = Role("admin", admin_permissions)
+    user_role = Role("user", user_permissions)
 
-    admin_access = AccessControl(admin_user)
-    user_access = AccessControl(normal_user)
+    # Создание пользователей с различными ролями
+    admin_user = User("admin", "admin_secret", "123 Admin St", admin_role)
+    normal_user = User("user", "user_secret", "456 User St", user_role)
 
+    # Проверка прав для admin
+    print(admin_user.get_password())  # Должно вернуться "admin_secret"
+    print(admin_user.get_address())  # Должно вернуться "123 Admin St"
+
+    # Проверка прав для user
     try:
-        print(admin_access.get_sensitive_data("password", "admin"))  # Должно вернуться "admin_secret"
-        print(user_access.get_sensitive_data("password", "admin"))  # Должна возникнуть ошибка
+        print(normal_user.get_address())  # Должно вернуться "456 User St"
+        print(normal_user.get_password())  # Должна возникнуть ошибка, так как у пользователя нет прав
     except PermissionError as e:
-        print(e)
+        print('Ошибка доступа')
+

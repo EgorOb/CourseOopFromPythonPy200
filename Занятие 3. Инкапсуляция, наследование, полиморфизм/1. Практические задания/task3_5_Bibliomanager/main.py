@@ -240,7 +240,7 @@ class LibraryManager:
 
 
 if __name__ == "__main__":
-    # Считывание данных для записи
+    # Считывание данных книг для записи в библиотеку
     with open('library_items.json', encoding="utf-8") as file:
         books = json.load(file)
 

@@ -25,50 +25,50 @@ files:
       - offset: 2175
         length: 80
         placeholder_text: '# TODO добавьте свойство publication_year (на чтение)'
-      - offset: 2653
+      - offset: 2645
         length: 115
-        placeholder_text: "... # TODO Инициализируйте переменные от LibraryItem и доба\
-      вьте новый приватный атрибут genre. Не забудьте, что нужна валидация перед з\
-      аписью"
-      - offset: 2924
+        placeholder_text: "# TODO Инициализируйте переменные от LibraryItem и добавьте\
+      \ новый приватный атрибут genre. Не забудьте, что нужна валидация перед запи\
+      сью"
+      - offset: 2916
         length: 60
         placeholder_text: "...  # TODO написать метод валидации"
-      - offset: 2990
+      - offset: 2982
         length: 58
         placeholder_text: '# TODO добавьте свойство genre (на чтение)'
-      - offset: 3054
+      - offset: 3046
         length: 139
         placeholder_text: "# TODO  переопределите метод get_info, чтобы он отображал и\
       нформацию специфичную для книги (Книга: 'Название книги',  Автор: 'Кто напис\
       ал', Жанр: 'Жанр книги', Год издания: 'Год')"
-      - offset: 3397
+      - offset: 3389
         length: 158
         placeholder_text: "... # TODO Инициализируйте переменные от LibraryItem и доба\
       вьте новый приватный атрибут issue_number. Не забудьте, что нужна валидация\
       \ перед записью"
-      - offset: 3725
+      - offset: 3717
         length: 67
         placeholder_text: "...  # TODO написать метод валидации"
-      - offset: 3798
+      - offset: 3790
         length: 72
         placeholder_text: '# TODO добавьте свойство issue_number (на чтение)'
-      - offset: 3876
+      - offset: 3868
         length: 134
         placeholder_text: "# TODO  переопределите метод get_info, чтобы он отображал и\
       нформацию специфичную для журнала (Журнал: 'Название журнала',  Номер выпуск\
       а: 'Номер', Год издания: 'Год')"
-      - offset: 4084
+      - offset: 4076
         length: 245
         placeholder_text: "... # TODO Инициализируйте переменные от LibraryItem и доба\
       вьте новый приватный атрибут publication_date. Не забудьте, что нужна валида\
       ция перед записью"
-      - offset: 4799
+      - offset: 4791
         length: 243
         placeholder_text: "...  # TODO написать метод валидации"
-      - offset: 5048
+      - offset: 5040
         length: 80
         placeholder_text: '# TODO добавьте свойство publication_date (на чтение)'
-      - offset: 5134
+      - offset: 5126
         length: 137
         placeholder_text: "# TODO  переопределите метод get_info, чтобы он отображал и\
       нформацию специфичную для газеты (Газета: 'Название газеты',  Дата выпуска:\

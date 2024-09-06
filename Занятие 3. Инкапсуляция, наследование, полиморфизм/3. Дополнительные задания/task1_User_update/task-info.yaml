@@ -2,6 +2,21 @@ type: output
 files:
   - name: main.py
     visible: true
+    placeholders:
+      - offset: 621
+        length: 42
+        placeholder_text: "...  # TODO  self.permissions это словарь с разрешениями на\
+      \ действия (action) проверьте есть ли соответствующее разрешение на действие"
+      - offset: 1195
+        length: 156
+        placeholder_text: "...  # TODO Проверьте есть ли у пользователя право на просм\
+      отр пароля, это действие называется 'view_password'. У атрибута role проверь\
+      те метод has_permission. Если такое разрешение есть, то верните пароль, если\
+      \ нет то вызовите ошибку PermissionError"
+      - offset: 1613
+        length: 154
+        placeholder_text: "...  # TODO Произведите аналогичные манипуляции как и в мет\
+      оде get_password только для разрешения 'view_address'"
   - name: __init__.py
     visible: false
   - name: tests/output.txt
