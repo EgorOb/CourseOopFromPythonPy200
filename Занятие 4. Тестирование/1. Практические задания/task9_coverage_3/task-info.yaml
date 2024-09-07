@@ -1,10 +1,10 @@
 type: theory
 files:
-- name: main.py
-  visible: true
-- name: __init__.py
-  visible: false
-- name: example.py
-  visible: true
-- name: test_main.py
-  visible: true
+  - name: main.py
+    visible: true
+  - name: __init__.py
+    visible: false
+  - name: example.py
+    visible: true
+  - name: test_main.py
+    visible: true

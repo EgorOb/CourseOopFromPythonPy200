@@ -1,8 +1,8 @@
 type: theory
 files:
-- name: main.py
-  visible: true
-- name: __init__.py
-  visible: false
-- name: add.py
-  visible: true
+  - name: main.py
+    visible: true
+  - name: __init__.py
+    visible: false
+  - name: add.py
+    visible: true

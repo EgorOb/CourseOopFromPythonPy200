@@ -14,8 +14,8 @@ files:
                   self.capacity_volume = capacity_volume  # объем стакана
       - offset: 316
         length: 263
-        placeholder_text: "# TODO создать метод init_capacity_volume, который будет инициализировать атрибу\
-      т capacity_volume"
+        placeholder_text: "# TODO создать метод init_capacity_volume, который будет ин\
+      ициализировать атрибут capacity_volume"
       - offset: 897
         length: 15
         placeholder_text: "...  # TODO инициализировать экземпляр класса Glass с объем\
