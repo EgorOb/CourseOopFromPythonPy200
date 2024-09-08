@@ -1,0 +1,29 @@
+type: output
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 1174
+        length: 158
+        placeholder_text: "...  # TODO реализация для добавления продукта в репозитори\
+      й"
+      - offset: 1381
+        length: 157
+        placeholder_text: "...  # TODO реализация для обновления продукта в репозитори\
+      и"
+      - offset: 1587
+        length: 146
+        placeholder_text: "...  # TODO реализация для извлечения продукта из репозитор\
+      ия"
+      - offset: 1903
+        length: 142
+        placeholder_text: "...  # TODO реализация для размещения заказа в репозитории"
+      - offset: 2090
+        length: 134
+        placeholder_text: "...  # TODO реализация для извлечения заказа из репозитория"
+  - name: __init__.py
+    visible: false
+  - name: tests/output.txt
+    visible: false
+  - name: tests/input.txt
+    visible: false

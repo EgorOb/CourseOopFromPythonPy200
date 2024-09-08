@@ -1,0 +1,31 @@
+type: theory
+files:
+  - name: main.py
+    visible: true
+    placeholders:
+      - offset: 1169
+        length: 45
+        placeholder_text: '# TODO проверьте что в атрибут баланса всё верно записалось'
+      - offset: 1313
+        length: 74
+        placeholder_text: '# TODO добавьте 500 единиц к балансу и проверьте что в атрибут
+      баланса всё верно записалось'
+      - offset: 1486
+        length: 69
+        placeholder_text: '# TODO проверьте что вызывается ошибка при добавлении отрицательного
+      баланса'
+      - offset: 1656
+        length: 74
+        placeholder_text: '# TODO снимите 500 единиц и проверьте что в атрибут баланса
+      всё верно записалось'
+      - offset: 1833
+        length: 70
+        placeholder_text: "# TODO проверьте, что нельзя снять 1500 единиц со счета"
+      - offset: 2011
+        length: 67
+        placeholder_text: "# TODO проверьте, что нельзя снять 0 со счета"
+      - offset: 2168
+        length: 55
+        placeholder_text: '# TODO  проверьте доступность получения номера аккаунта'
+  - name: __init__.py
+    visible: false

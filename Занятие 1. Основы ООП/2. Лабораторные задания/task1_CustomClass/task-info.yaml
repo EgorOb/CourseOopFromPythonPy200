@@ -4,5 +4,5 @@ files:
     visible: true
   - name: __init__.py
     visible: false
-  - name: ../../../Занятие 4. Тестирование/2. Лабораторные задания/task1/test_linked_list.py
+  - name: ../../../Дополнительно. Тестирование/2. Лабораторные задания/task1/test_linked_list.py
     visible: true
