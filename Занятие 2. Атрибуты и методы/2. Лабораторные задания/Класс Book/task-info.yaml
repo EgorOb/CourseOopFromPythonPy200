@@ -16,3 +16,4 @@ files:
       - offset: 357
         length: 4
         placeholder_text: "pass # TODO дописать метод"
+solution_hidden: true
